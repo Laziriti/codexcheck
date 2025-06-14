@@ -1,0 +1,39 @@
+/* Styles for Journal Graph module */
+.journal-graph {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.journal-graph canvas {
+  width: 100%;
+  height: 100%;
+  background: #f0f0f0;
+  cursor: grab;
+}
+
+.journal-graph.editing canvas {
+  cursor: crosshair;
+}
+
+.journal-graph .controls {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  display: flex;
+  gap: 4px;
+  z-index: 10;
+}
+
+.journal-graph .controls button {
+  border: 1px solid #777;
+  background: #fff;
+  padding: 2px 6px;
+  cursor: pointer;
+}
+
+.journal-graph .controls button.active {
+  background: #aaa;
+  color: #fff;
+}
