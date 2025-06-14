@@ -1,0 +1,23 @@
+<form>
+  <div class="form-group">
+    <label>Label</label>
+    <input type="text" name="label" value="{{label}}"/>
+  </div>
+  <div class="form-group">
+    <label>Shape</label>
+    <select name="shape">
+      <option value="rect" {{#ifEquals shape 'rect'}}selected{{/ifEquals}}>Rectangle</option>
+      <option value="circle" {{#ifEquals shape 'circle'}}selected{{/ifEquals}}>Circle</option>
+      <option value="diamond" {{#ifEquals shape 'diamond'}}selected{{/ifEquals}}>Diamond</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Background Image URL</label>
+    <input type="text" name="bg" value="{{bg}}"/>
+  </div>
+  <div class="form-group">
+    <label>Link UUID</label>
+    <input type="text" name="link" value="{{link}}"/>
+  </div>
+  <button type="submit">Save</button>
+</form>
